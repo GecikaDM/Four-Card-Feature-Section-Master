@@ -51,6 +51,8 @@ html, body {
 img {
   float: right;
   padding-right: 30px;
+  max-width: 100%;
+  height: auto;
 }
 .cyan{
   border-top: 3px solid hsl(180, 62%, 55%);
