@@ -11,6 +11,11 @@ html, body {
 }
 *  { box-sizing: border-box; }
 
+/** 
+**header part
+**
+**/
+
 .titles {
   text-align: center;
 }
@@ -32,6 +37,12 @@ html, body {
   margin: auto;
   width: 100%;
 }
+
+/** 
+**Content
+**
+**/
+
 .cards-container {
   display: flex;
   flex-direction: column;
@@ -50,6 +61,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+.cards {
+  align-self: center;
+  width: 300px;
+  margin-bottom: 20px;
+  height: 220px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 5px 5px lightgrey;
+}
 .cyan{
   border-top: 3px solid hsl(180, 62%, 55%);
   border-radius: 5px;
@@ -66,41 +86,12 @@ img {
   border-top:3px solid hsl(212, 86%, 64%);
   border-radius: 5px;
 }
-/* .box1 {
-  grid-row-start: 2;
-  grid-column-start: 1;
-  justify-self: right;
-}
-.box2 {
- grid-column-start: 2;
- grid-row-start: 1;
- justify-self: center;
- margin-bottom: -75px;
-}
 
-.box3 {
-  grid-column-start: 2;
-  grid-row-start: 3;
-  justify-self: center;
-  margin-top: -75px;
- }
+/** 
+**Footer
+**
+**/
 
- .box4 {
-   grid-column-start: 3;
-   grid-row-start: 2;
-   justify-self: left;
- } */
-
-.cards {
-  align-self: center;
-  width: 300px;
-  margin-bottom: 20px;
-  height: 220px;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-  box-shadow: 5px 5px 5px lightgrey;
-}
-/*footer*/
 .attribution { 
   bottom: 0;
   width: 100%;
@@ -111,50 +102,12 @@ img {
   color: hsl(228, 45%, 44%); 
 }
 
-/* @media (min-width: 320px) and (max-width: 425px) {
-  .cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .intro p {
-    width: 100%;
-    padding: 15px;
-  }
-  .cards {
-    margin-bottom: 15px;
-  }
 
-  .second-title {
-    margin-bottom: 15px;
-  }
-  body {
-    height: auto;
-  }
-  .box3 {
-    margin-top: 0;
-  }
-  .attribution {
-   position: relative;
-   width: 100%;
-   padding: 29px;
-  }
-}
+/** 
+**Responsive
+**
+**/
 
-@media (min-width: 768px) and (max-width: 1440px) {
- 
- body {
-  width: 140%;
- }
- .attribution {
-   width: 140%;
- }
- .cards {
-   width: 300px;
-   height: 200px;
- }
-}
- */
  @media screen and (min-width: 750px) {
   .cards-container {
     display: flex;
@@ -205,29 +158,28 @@ img {
       margin: 0;
       margin-bottom: -75px;
     }
-   
-}
-@media screen and (min-width: 1050px) {
-  .first-title  {
-    font-size: 2em;
   }
-  .second-title {
-    font-size: 2em;
+  @media screen and (min-width: 1050px) {
+    .first-title  {
+      font-size: 2em;
+    }
+    .second-title {
+      font-size: 2em;
+    }
+    main {
+      width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cards-container {
+      margin-top: 20px;
+    }
+    .cards {
+      margin: 0px 15px -75px;
+      width: 325px;
+      height: 250px;
+    }
+    img {
+      margin-top: 40px;
+    }
   }
-  main {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .cards-container {
-    margin-top: 20px;
-  }
-  .cards {
-    margin: 0px 15px -75px;
-    width: 325px;
-    height: 250px;
-  }
-  img {
-    margin-top: 40px;
-  }
-}
